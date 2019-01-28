@@ -14,31 +14,31 @@ export class QuoteComponent implements OnInit {
       1,
       "Success is not final;failure is not fatal:it is the courage to continue that counts",
       "success",
-      new Date(2018, 3, 14)
+      new Date(2018, 3, 14,),"grace"
     ),
     new Quote(
       2,
       "It is better to fail in originality than to succesd in imitation",
       "imitation",
-      new Date(2018, 6, 9)
+      new Date(2018, 6, 9),"flore"
     ),
     new Quote(
       3,
       "The road to success and the road to failure are almost exactly the same",
       "failure",
-      new Date(2018, 6, 9)
+      new Date(2018, 6, 9),"shema"
     ),
     new Quote(
       4,
       "success usually comes to those who rae too busy to be looking for it",
       "busy",
-      new Date(2018, 1, 12)
+      new Date(2018, 1, 12),"gloria"
     ),
     new Quote(
       5,
       "success is not accident its the result of of pefection,hard work and leaning from failur",
       "result",
-      new Date(2018, 0, 18)
+      new Date(2018, 0, 18),"dan"
     )
   ];
 
