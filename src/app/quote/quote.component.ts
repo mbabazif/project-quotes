@@ -42,36 +42,9 @@ export class QuoteComponent implements OnInit {
     )
   ];
 
-  //   scope.isUpVoted = false;
-  //     this.watch("isUpVoted",(newVal, oldVal){
-  //     if(newVal != oldVal){
-  //         if(newVal){
-  //            // first click
-  //            // upvote
+  
 
-  //         }else{
-  //            // second click
-  //            // remove upvote
-  //         }
-
-  //         }
-  // });
-
-  // .isDownVoted = false;
-  //         this.$watch("isDownVoted",(newVal, oldVal){
-  //         if(newVal != oldVal){
-  //             if(newVal){
-  //                // first click
-  //                // downvote
-
-  //             }else{
-  //                // second click
-  //                // remove downvote
-  //             }
-
-  //             }
-  //     });
-
+  
   toogleDetails(index) {
     this.quotes[index].showdescription = !this.quotes[index].showdescription;
   }
