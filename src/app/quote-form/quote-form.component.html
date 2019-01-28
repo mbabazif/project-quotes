@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <form (ngSubmit)="submitGoal()" #quoteForm="ngForm">
+    <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
       <div class="form-group">
         <label for="name"> Enter Quote</label>
         <input type="text" required class="form-control" id="name" /><br />
@@ -12,8 +12,8 @@
           id="description"
           rows="4"
           required
-        ></textarea><br>
-
+        ></textarea
+        ><br />
       </div>
       <div class="form-group">
         <label for="complete">Completion</label>
@@ -37,10 +37,7 @@
         ></div>
       </div>
       <button type="submit">Add quote</button>
-
-
-    </form><a class="green" ng-click="isUpVoted = !isUpVoted"  ng-style="afterVoteUp" href=""> <i title="Up Votes" class="fa fa-arrow-circle-up fa-2x"></i></a>
-
-<a class="maroon" ng-click="isDownVoted = !isDownVoted" ng-style="afterVoteDown" href="" > <i title="Down Votes" class="fa fa-arrow-circle-down fa-2x "></i></a>
+    </form>
+    
   </div>
 </div>

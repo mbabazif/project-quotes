@@ -1,15 +1,19 @@
 <app-quote-form></app-quote-form>
 
 <h1>My Quotes</h1>
-<hr>
+<hr />
 
 <ul>
-    <div *ngFor='let goal of goals;let i = index'>
-        <li >{{Quotes.name}}</li>
-        <app-quote-details *ngIf="goal.showDescription" [goal]='goal' (isComplete)= 'deleteGoal($event,i)'></app-quote-details>
-        <button  (click)='toogleDetails(i)'>Toogle Details</button>
+  <div *ngFor="let goal of goals; let i = index">
+    <li>{{ Quotes.name }}</li>
+    <app-quote-details
+      *ngIf="goal.showDescription"
+      [goal]="goal"
+      (isComplete)="deleteGoal($event, i)"
+    ></app-quote-details>
+    <button (click)="toogleDetails(i)">Toogle Details</button>
 
-        <app-quote-details *ngIf="quote.Author" []='quote'></app-quote-details>
-    </div>
+    <app-quote-details *ngIf="quote.Author" []="quote"></app-quote-details>
+  </div>
 </ul>
-  <p *ngIf='goals.length > 5'>You have too many quotes</p>
+<!-- <p *ngIf='goals.length > 5'>You have too many quotes</p> -->
