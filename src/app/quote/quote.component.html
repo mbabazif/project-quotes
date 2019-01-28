@@ -8,7 +8,7 @@
         <li >{{Quotes.name}}</li>
         <button  (click)='toogleDetails(i)'>Toogle Details</button>
 
-        <app-goal-details *ngIf="quote.Author" []='quote'></app-goal-details>
+        <app-quote-details *ngIf="quote.Author" []='quote'></app-quote-details>
     </div>
 </ul>
   <p *ngIf='goals.length > 5'>You have too many quotes</p>
