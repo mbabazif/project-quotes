@@ -6,6 +6,7 @@
 <ul>
     <div *ngFor='let goal of goals;let i = index'>
         <li >{{Quotes.name}}</li>
+        <app-quote-details *ngIf="goal.showDescription" [goal]='goal' (isComplete)= 'deleteGoal($event,i)'></app-quote-details>
         <button  (click)='toogleDetails(i)'>Toogle Details</button>
 
         <app-quote-details *ngIf="quote.Author" []='quote'></app-quote-details>
