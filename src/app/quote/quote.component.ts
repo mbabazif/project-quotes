@@ -42,9 +42,13 @@ export class QuoteComponent implements OnInit {
     )
   ];
 
-  
-
-  
+  addNewGoal(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.completeDate = new Date(quote.completeDate);
+    this.quotes.push(quote);
+    console.log(this.quotes);
+  }
   toogleDetails(index) {
     this.quotes[index].showdescription = !this.quotes[index].showdescription;
   }

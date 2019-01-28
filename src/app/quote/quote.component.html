@@ -1,11 +1,11 @@
-<app-quote-form></app-quote-form>
+<app-quote-form (addquote)="addNewGoal($event)"></app-quote-form>
 
 <h1>My Quotes</h1>
 <hr />
 
 <ul>
-  <div *ngFor="let goal of goals; let i = index">
-    <li>{{ Quotes.name }}</li>
+  <div *ngFor="let goal of quotes; let i = index">
+    <li>{{ goal.name }}</li>
     <app-quote-details
       *ngIf="goal.showDescription"
       [goal]="goal"
@@ -13,7 +13,7 @@
     ></app-quote-details>
     <button (click)="toogleDetails(i)">Toogle Details</button>
 
-    <app-quote-details *ngIf="quote.Author" []="quote"></app-quote-details>
+    <!-- <app-quote-details *ngIf="quote.Author" []="quote"></app-quote-details> -->
   </div>
 </ul>
 <!-- <p *ngIf='goals.length > 5'>You have too many quotes</p> -->
