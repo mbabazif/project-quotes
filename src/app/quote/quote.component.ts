@@ -31,7 +31,7 @@ export class QuoteComponent implements OnInit {
   ];
 
   toogleDetails(index) {
-    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+    this.quotes[index].showdescription = !this.quotes[index].showdescription;
   }
 
   constructor() {}
