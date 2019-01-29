@@ -4,8 +4,9 @@
     <form (ngSubmit)="submitQuote()" #quoteForm="ngForm">
       <div class="form-group">
         <label for="name"> Enter Quote</label>
-        <input type="text" required class="form-control" id="name"[(ngModel)]="newQuote.Author"
-        name="Author"
+        <input type="text" required class="form-control" id="name"
+         [(ngModel)]="newQuote.name"
+        name="name"
         required
        
       /> 
@@ -33,9 +34,9 @@
           required
           class="form-control"
           id="author"
-          [(ngModel)]="newQuote.name"
-          name="name"
-          required
+          [(ngModel)]="newQuote.Author"
+        name="Author"
+        required
         />
         <div class="alert alert-danger"></div>
       </div>

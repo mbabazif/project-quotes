@@ -4,8 +4,8 @@
 <hr />
 
 <ul>
-  <div *ngFor="let goal of quotes; let i = index">
-    <li>{{ goal.name }}</li>
+  <div *ngFor="let quote of quotes; let i = index">
+    <li appStrikethrough>{{ quote.name }}</li>
     <app-quote-details
       *ngIf="goal.showDescription"
       [goal]="goal"
