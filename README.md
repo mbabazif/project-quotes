@@ -31,20 +31,20 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Description
 
-This program creates a two player web game for Pig Dice game.
+This program gives the user the room to add the quote
 
 ## Setup/Installation Requirements
 
-This program can only be accessed on a computer with Git and Atom installed.
+This program can only be accessed on a computer with Git and visual stedio installed.
 
 - Clone this repository
 - Open index.html in Terminal
 
-## Known Bugs
-
-- The buttons for the other player do not enable once the current player rolls a 1 and forfeits the turn. The current player is able to keep playing until they click "Hold", which only then disables the other player's buttons.
 
 ## Specifications
+The user is able to enter the quote
+The user is likely to choose the best quote for her/her
+The user can delete the quote
 
 
 
@@ -58,7 +58,7 @@ This program can only be accessed on a computer with Git and Atom installed.
 
 ### Links
 
-Git clone https://github.com/mbabazif/dice-game.git
+Git clone 
 
 ### License
 
