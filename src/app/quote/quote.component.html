@@ -2,20 +2,19 @@
 
 <h1>Your quote will be added to the list</h1>
 <div id="lab">
+  <ul>
+    <div *ngFor="let quote of quotes; let i = index">
+      <li appStrikethrough>{{ quote.name }}</li>
 
-<ul>
-  <div *ngFor="let quote of quotes; let i = index">
-    <li appStrikethrough>{{ quote.name }}</li>
-
-    <button class="toog" (click)="toogleDetails(i)">Toogle Details</button>
-    <button class=upvote (click)="upvote(i)">quote.upvotes</button>
-    <button class="downvote" (click)="downvote(i)">quote.downvotes</button>
-    <app-quote-details
-      *ngIf="quote.showAuthor"
-      [quote]="quote"
-      (isComplete)="deleteQuote($event, i)"
-    ></app-quote-details>
-  </div>
-</ul>
+      <button class="toog" (click)="toogleDetails(i)">Toogle Details</button>
+      <button class="upvote" (click)="upvote(i)">quote.upvotes</button>
+      <button class="downvote" (click)="downvote(i)">quote.downvotes</button>
+      <app-quote-details
+        *ngIf="quote.showAuthor"
+        [quote]="quote"
+        (isComplete)="deleteQuote($event, i)"
+      ></app-quote-details>
+    </div>
+  </ul>
 </div>
 <!-- <p *ngIf='goals.length > 5'>You have too many quotes</p> -->
