@@ -2,5 +2,5 @@
 <p>{{ quote.upvotes }}</p>
 <p>{{ quote.downvotes }}</p>
 
-<p>This goal will be completed in {{ quote.completeDate | dateCount }} days</p>
-<button (click)="quoteComplete(true)">Complete</button>
+<p>This quote will be completed in {{ quote.completeDate | dateCount }} days</p>
+<button class="delete" (click)="quoteComplete(true)">Complete</button>
