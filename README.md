@@ -26,6 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+# QUOTES
 
 #### By Mbabazi Florence
 
@@ -40,13 +41,11 @@ This program can only be accessed on a computer with Git and visual stedio insta
 - Clone this repository
 - Open index.html in Terminal
 
-
 ## Specifications
+
 The user is able to enter the quote
-The user is likely to choose the best quote for her/her
+The user is likely to choose the best quote for her/her by using the upvote and downvoted
 The user can delete the quote
-
-
 
 ## Technologies Used
 
@@ -54,7 +53,6 @@ The user can delete the quote
 - CSS
 - Bootstrap
 - Angularjs
-- JavaScript
 
 ### Links
 
@@ -63,4 +61,3 @@ Git clone: https://github.com/mbabazif/project-quotes.git
 ### License
 
 Licensed under Florence mbabazi 2019
-
