@@ -58,7 +58,7 @@ The user can delete the quote
 
 ### Links
 
-Git clone 
+Git clone: https://github.com/mbabazif/project-quotes.git
 
 ### License
 
