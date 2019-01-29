@@ -6,14 +6,15 @@
 <ul>
   <div *ngFor="let quote of quotes; let i = index">
     <li appStrikethrough>{{ quote.name }}</li>
-    <app-quote-details
-      *ngIf="goal.showDescription"
-      [goal]="goal"
-      (isComplete)="deleteGoal($event, i)"
-    ></app-quote-details>
-    <button (click)="toogleDetails(i)">Toogle Details</button>
 
-    <!-- <app-quote-details *ngIf="quote.Author" []="quote"></app-quote-details> -->
+    <button class="toog" (click)="toogleDetails(i)">Toogle Details</button>
+    <button class=upvote (click)="upvote(i)">quote.upvotes</button>
+    <button class="downvote" (click)="downvote(i)">quote.downvotes</button>
+    <app-quote-details
+      *ngIf="quote.showAuthor"
+      [quote]="quote"
+      (isComplete)="deleteQuote($event, i)"
+    ></app-quote-details>
   </div>
 </ul>
 <!-- <p *ngIf='goals.length > 5'>You have too many quotes</p> -->

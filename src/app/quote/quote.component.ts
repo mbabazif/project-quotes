@@ -7,38 +7,51 @@ import { Quote } from "../quote";
   styleUrls: ["./quote.component.css"]
 })
 export class QuoteComponent implements OnInit {
-  upvote = 0;
-  downvote = 0;
   quotes = [
     new Quote(
       1,
       "Success is not final;failure is not fatal:it is the courage to continue that counts",
       "success",
-      new Date(2018, 3, 14,),"grace"
+      new Date(2018, 3, 14),
+      "grace",
+      7,
+      7
     ),
     new Quote(
       2,
       "It is better to fail in originality than to succesd in imitation",
       "imitation",
-      new Date(2018, 6, 9),"flore"
+      new Date(2018, 6, 9),
+      "flore",
+      7,
+      7
     ),
     new Quote(
       3,
       "The road to success and the road to failure are almost exactly the same",
       "failure",
-      new Date(2018, 6, 9),"shema"
+      new Date(2018, 6, 9),
+      "shema",
+      7,
+      7
     ),
     new Quote(
       4,
       "success usually comes to those who rae too busy to be looking for it",
       "busy",
-      new Date(2018, 1, 12),"gloria"
+      new Date(2018, 1, 12),
+      "gloria",
+      7,
+      7
     ),
     new Quote(
       5,
       "success is not accident its the result of of pefection,hard work and leaning from failur",
       "result",
-      new Date(2018, 0, 18),"dan"
+      new Date(2018, 0, 18),
+      "dan",
+      7,
+      7
     )
   ];
 
@@ -50,9 +63,26 @@ export class QuoteComponent implements OnInit {
     console.log(this.quotes);
   }
   toogleDetails(index) {
-    this.quotes[index].showdescription = !this.quotes[index].showdescription;
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+    this.quotes[index].showLikes = !this.quotes[index].showLikes;
   }
-
+  upvote(index) {
+    this.quotes[index].upvotes++;
+  }
+  downvote(index) {
+    this.quotes[index].downvotes++;
+  }
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm;
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
+  addNewQuote(quote) {
+    this.quotes.push(quote);
+  }
   constructor() {}
   ngOnInit() {}
 }

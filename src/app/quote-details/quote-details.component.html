@@ -1,3 +1,6 @@
-<p>{{quote.Author}}</p>
-<p>This goal will be completed in {{quote.completeDate|dateCount}} days</p>
-<button (click) = 'quoteComplete(true)'> Complete </button>
+<p>{{ quote.Author }}</p>
+<p>{{ quote.upvotes }}</p>
+<p>{{ quote.downvotes }}</p>
+
+<p>This goal will be completed in {{ quote.completeDate | dateCount }} days</p>
+<button (click)="quoteComplete(true)">Complete</button>
