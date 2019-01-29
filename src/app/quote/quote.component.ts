@@ -14,8 +14,8 @@ export class QuoteComponent implements OnInit {
       "success",
       new Date(2018, 3, 14),
       "grace",
-      7,
-      7
+      0,
+      0
     ),
     new Quote(
       2,
@@ -23,8 +23,8 @@ export class QuoteComponent implements OnInit {
       "imitation",
       new Date(2018, 6, 9),
       "flore",
-      7,
-      7
+      0,
+      0
     ),
     new Quote(
       3,
@@ -32,8 +32,8 @@ export class QuoteComponent implements OnInit {
       "failure",
       new Date(2018, 6, 9),
       "shema",
-      7,
-      7
+      0,
+      0
     ),
     new Quote(
       4,
@@ -41,8 +41,8 @@ export class QuoteComponent implements OnInit {
       "busy",
       new Date(2018, 1, 12),
       "gloria",
-      7,
-      7
+      0,
+      0
     ),
     new Quote(
       5,
@@ -50,8 +50,8 @@ export class QuoteComponent implements OnInit {
       "result",
       new Date(2018, 0, 18),
       "dan",
-      7,
-      7
+      0,
+      0
     )
   ];
 

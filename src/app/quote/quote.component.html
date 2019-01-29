@@ -1,7 +1,7 @@
 <app-quote-form (addquote)="addNewGoal($event)"></app-quote-form>
 
-<h1>My Quotes</h1>
-<hr />
+<h1>Your quote will be added to the list</h1>
+<div id="lab">
 
 <ul>
   <div *ngFor="let quote of quotes; let i = index">
@@ -17,4 +17,5 @@
     ></app-quote-details>
   </div>
 </ul>
+</div>
 <!-- <p *ngIf='goals.length > 5'>You have too many quotes</p> -->

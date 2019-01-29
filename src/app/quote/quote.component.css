@@ -1,12 +1,18 @@
-.toog{
-    background-color: lightseagreen;
-    color: black;
+.toog {
+  background-color: lightseagreen;
+  color: black;
 }
-.upvote{
-    background-color:  pink;
-    color: black;
+.upvote {
+  background-color: pink;
+  color: black;
 }
-.downvote{
-    background-color:lightgrey;
-    color: black;
+.downvote {
+  background-color: lightgrey;
+  color: black;
+}
+#lab {
+  text-decoration-style: none;
+  background-color: aquamarine;
+  width: 80%;
+  margin-left: 40px;
 }
